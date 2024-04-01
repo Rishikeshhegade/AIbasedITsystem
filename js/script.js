@@ -28,6 +28,9 @@ toggleBtn.onclick = (e) =>{
    }
 }
 
+
+
+
 let profile = document.querySelector('.header .flex .profile');
 
 document.querySelector('#user-btn').onclick = () =>{
@@ -64,11 +67,11 @@ window.onscroll = () =>{
    }
 }
 
-const submitButton = document.querySelector('.submitBtn');
-console.log(submitButton)
-submitButton.addEventListener('click',function(){
-  alert("Log in successfull")
-})
+// const submitButton = document.querySelector('.submitBtn');
+// console.log(submitButton)
+// submitButton.addEventListener('click',function(){
+//   alert("Log in successfull")
+// })
 
 
 
