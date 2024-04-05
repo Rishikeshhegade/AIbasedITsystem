@@ -103,7 +103,7 @@
          <textarea name="msg"  id="message" class="box" placeholder="enter your message" cols="30" rows="10"></textarea>
          <label for="message"></label>
 
-         <input type="submit" value="send message" class="inline-btn" name="submit">
+         <input type="submit" value="send message" class="inline-btn" name="submit" onclick="auth()">
 
       </form>
 
@@ -142,9 +142,13 @@
 
 </footer>
 
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-<!-- <script src="https://kit.fontawesome.com/f69fbf46df.js" crossorigin="anonymous"></script> -->
 
+<script src="js/script.js"></script>
+<script>
+   function auth(){
+           window.location.assign("contact.html"); 
+     }
+    
+   </script>
 </body>
 </html>
