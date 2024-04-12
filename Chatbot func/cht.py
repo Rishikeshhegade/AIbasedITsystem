@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request, jsonify
 from AI_Chatbot import chat_bot, load_knowledge_base
 
-app = Flask(__name__)
-knowledge_base = load_knowledge_base("knowlaged_base.json") 
+app = Flask(__name__,template_folder='template')
+knowledge_base = load_knowledge_base("C:/Users/Shekhar/OneDrive/Desktop/Langchain/BE/AIbasedITsystem/Chatbot func/knowlaged_base.json")
+
 
 @app.route('/')
 def index():
