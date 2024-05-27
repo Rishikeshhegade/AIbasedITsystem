@@ -64,24 +64,57 @@ window.onscroll = () =>{
    }
 }
 
-const submitButton = document.querySelector('.submitBtn');
-console.log(submitButton)
-submitButton.addEventListener('click',function(){
-  alert("Log in successfull")
-})
+// const submitButton = document.querySelector('.submitBtn');
+// console.log(submitButton)
+// submitButton.addEventListener('click',function(){
+//   alert("Log in successfull")
+// })
 
 
 
 
 /*-----------------------------*/
 
-const chatbotFull = document.querySelector("#chatbot.full");
-const chatbotToggler = document.querySelector(".chatbot-toggler");
+// const generateResponse = (chatElement) => {
+//     const messageElement = chatElement.querySelector("p");
+
+//     // Define the URL for sending user message to the Flask backend
+//     const API_URL = "http://127.0.0.1:5000";
+
+//     // Define the data to be sent in the POST request
+//     const data = {
+//         user_input: userMessage
+//     };
+
+//     // Define request options
+//     const requestOptions = {
+//         method: "POST",
+//         headers: {
+//             "Content-Type": "application/json"
+//         },
+//         body: JSON.stringify(data)
+//     };
+
+//     // Send POST request to Flask backend
+//     fetch("http://127.0.0.1:5000", requestOptions)
+//         .then(res => res.json())
+//         .then(data => {
+//             messageElement.textContent = data.response;
+//         })
+//         .catch(() => {
+//             messageElement.classList.add("error");
+//             messageElement.textContent = "Oops! Something went wrong. Please try again.";
+//         })
+//         .finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
+// }
+
+ /* --------------------------------------------------------- */
+
+ const chatbotToggler = document.querySelector(".chatbot-toggler");
 const closeBtn = document.querySelector(".close-btn");
 const chatbox = document.querySelector(".chatbox");
 const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
-
 
 let userMessage = null; // Variable to store user's message
 const API_KEY = "PASTE-YOUR-API-KEY"; // Paste your API key here
@@ -97,6 +130,9 @@ const createChatLi = (message, className) => {
     return chatLi; // return chat <li> element
 }
 
+
+
+//------ chatbot function -----------
 const generateResponse = (chatElement) => {
     const API_URL = "https://api.openai.com/v1/chat/completions";
     const messageElement = chatElement.querySelector("p");
