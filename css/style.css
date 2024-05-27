@@ -354,6 +354,9 @@ section{
    color: var(--black);
 }
 
+#lg{
+   margin-left: 0rem;
+}
 .header .flex .search-form{
    width: 50rem;
    border-radius: .5rem;
@@ -1444,6 +1447,8 @@ section{
    border-radius: .5rem;
    padding: 2rem;
    width: 50rem;
+
+  
 }
 
 .form-container form h3{

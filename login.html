@@ -19,7 +19,7 @@
    
    <section class="flex">
 
-      <a href="home.html" class="logo">CarrerBooster</a>
+      <a href="#" class="logo"  id="lg">CarrerBooster</a>
 
       <!-- <form action="search.html" method="post" class="search-form">
          <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
@@ -81,7 +81,7 @@
       <input type="password" id="password" value="" name="pass" placeholder="enter your password" required maxlength="20" class="box">
       <!-- <button class = login-btn onclick= ""> -->
       <input type="submit" value="login" name="submit" class="btn" onclick="auth()" >
-      <input type="submit" value="Register" name="submit" class="btn" onclick="auth()" >
+      <input type="submit" value="Register" name="submit" class="btn" onclick="Register()" >
       </button>
    </form>
 
@@ -119,6 +119,14 @@ function auth(){
     return;
   }
  }
+</script>
+
+<script>
+   function Register(){
+      window.location.assign("Signup.html");
+        alert ("Welcome! To Carrierbooster..");
+
+   }
 </script>
 
    
