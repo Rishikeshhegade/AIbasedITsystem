@@ -352,11 +352,14 @@ section{
 .header .flex .logo{
    font-size: 2.5rem;
    color: var(--black);
+  
+}
+#lg{
+   font-size: 2.5rem;
+   color: var(--black);
+   padding-left: 45%;
 }
 
-#lg{
-   margin-left: 0rem;
-}
 .header .flex .search-form{
    width: 50rem;
    border-radius: .5rem;
