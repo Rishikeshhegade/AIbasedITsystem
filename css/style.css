@@ -815,6 +815,9 @@ section{
    color:var(--black);
    margin-right: .8rem;
 }
+button.clicked{
+   background-color: #8e44ad; 
+}
 
 .playlist-details .row .column .save-playlist button span{
    font-size: 1.8rem;
