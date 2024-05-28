@@ -1,0 +1,30 @@
+body{
+    background-color: var(--light-bg);
+    padding-left: 0rem;
+    
+ }
+.header{
+    position: sticky;
+    top:0; left:0; right: 0;
+    background-color: #fff;
+    z-index: 1000; 
+     border-bottom: var(--border); 
+ }
+ 
+ .header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1.5rem 2rem;
+    margin-left: 0%;
+ }
+ 
+ 
+ 
+ .header .flex .logo{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding-left: 65%;
+    font-weight: bold;
+ }

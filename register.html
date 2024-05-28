@@ -39,7 +39,7 @@
          <p class="role">student</p>
          <a href="profile.html" class="btn">view profile</a>
          <div class="flex-btn">
-            <a href="login.html" class="option-btn">login</a>
+            <a href="login.html" class="option-btn">logout</a>
             <a href="register.html" class="option-btn">register</a>
          </div>
       </div>
@@ -73,19 +73,20 @@
 
 <section class="form-container">
 
-   <form action="" method="post" enctype="multipart/form-data">
-      <h3>register now</h3>
+   <form action="https://formspree.io/f/mayrzkeb" method="post" enctype="multipart/form-data">
+      <h3>Teacher application form</h3>
       <p>your name <span>*</span></p>
       <input type="text" name="name" placeholder="enter your name" required maxlength="50" class="box">
-      <p>your email <span>*</span></p>
-      <input type="email" name="email" placeholder="enter your email" required maxlength="50" class="box">
-      <p>your password <span>*</span></p>
-      <input type="password" name="pass" placeholder="enter your password" required maxlength="20" class="box">
-      <p>confirm password <span>*</span></p>
-      <input type="password" name="c_pass" placeholder="confirm your password" required maxlength="20" class="box">
-      <p>select profile <span>*</span></p>
-      <input type="file" accept="image/*" required class="box">
-      <input type="submit" value="register new" name="submit" class="btn" onclick="auth()" >
+      <p>Area of interest <span>*</span></p>
+      <input type="text" name="name" placeholder="enter your area of interest" required maxlength="50" class="box">
+      <p>Mobile number <span>*</span></p>
+      <input type="text" name="number" placeholder="enter your mobile number" required maxlength="20" class="box">
+      <p>Email <span>*</span></p>
+      <input type="text" name="email" placeholder="enter your email" required maxlength="20" class="box">
+         <!-- <p>select profile <span>*</span></p>
+         <input type="file" accept="image/*" required class="box"> -->
+      <input type="submit" value="New applicant" name="submit" class="btn">
+
    </form>
 
 </section>
@@ -106,7 +107,7 @@
 
 <footer class="footer">
 
-   &copy; copyright @ 2022 by <span>mr. web designer</span> | all rights reserved!
+   &copy; copyright @ 2024 by <span>mr. web designer</span> | all rights reserved!
 
 </footer>
 

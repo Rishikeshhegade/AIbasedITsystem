@@ -336,9 +336,9 @@ section{
 .header{
    position: sticky;
    top:0; left:0; right: 0;
-   background-color: var(--white);
-   z-index: 1000;
-   border-bottom: var(--border);
+   background-color: #fff;
+   z-index: 1000; 
+    border-bottom: var(--border); 
 }
 
 .header .flex{
@@ -347,11 +347,21 @@ section{
    justify-content: space-between;
    position: relative;
    padding: 1.5rem 2rem;
+   margin-left: 0%;
 }
+
+
 
 .header .flex .logo{
    font-size: 2.5rem;
    color: var(--black);
+   text-align: center;
+  
+}
+#lg{
+   font-size: 2.5rem;
+   color: var(--black);
+  
 }
 
 .header .flex .search-form{
@@ -1447,6 +1457,8 @@ button.clicked{
    border-radius: .5rem;
    padding: 2rem;
    width: 50rem;
+
+  
 }
 
 .form-container form h3{
