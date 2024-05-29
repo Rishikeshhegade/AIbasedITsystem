@@ -2,6 +2,20 @@ let toggleBtn = document.getElementById('toggle-btn');
 let body = document.body;
 let darkMode = localStorage.getItem('dark-mode');
 
+document.addEventListener('DOMContentLoaded', (event) => {
+   // Select the button and add a click event listener
+   const savePlaylistButton = document.querySelector('.save-playlist button[type="submit"]');
+   const clickCountDisplay = document.getElementById('click-count');
+   let clickCount = 0
+   
+   savePlaylistButton.addEventListener('click', function(event) {
+       event.preventDefault(); // Prevent the default form submission
+       clickCount++
+       savePlaylistButton.style.backgroundColor = "#8e44ad"
+       
+       clickCountDisplay.textContent = `Total clicks: ${clickCount}`;
+   });
+});
 
 const enableDarkMode = () =>{
    toggleBtn.classList.replace('fa-sun', 'fa-moon');
