@@ -539,6 +539,29 @@ section{
 .side-bar.active{
    left: -30rem;
 }
+ 
+----------
+.home-grid .heading  {
+  
+   align-items: center;
+   
+}
+#id{
+  float: right;
+  margin-right: 30px;
+  margin-bottom: 20%;
+  display: inline;
+  
+
+}
+#id:hover{
+   background-color:rgb(247, 247, 247);
+  
+}
+---------
+
+
+
 
 .home-grid .box-container{
    display: grid;
@@ -611,6 +634,10 @@ section{
 .home-grid .box-container .likes span{
    color:var(--main-color);
 }
+
+
+
+
 
 .about .row{
    display: flex;
